@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CCAD56241D82430200286C5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD56231D82430200286C5E /* AppDelegate.swift */; };
-		CCAD56261D82430200286C5E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = CCAD56251D82430200286C5E /* GameScene.sks */; };
 		CCAD56281D82430200286C5E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD56271D82430200286C5E /* GameScene.swift */; };
 		CCAD562A1D82430200286C5E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD56291D82430200286C5E /* GameViewController.swift */; };
 		CCAD562D1D82430200286C5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD562B1D82430200286C5E /* Main.storyboard */; };
@@ -16,6 +15,8 @@
 		CCAD56321D82430200286C5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCAD56301D82430200286C5E /* LaunchScreen.storyboard */; };
 		CCAD563D1D82430200286C5E /* SwiftrisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD563C1D82430200286C5E /* SwiftrisTests.swift */; };
 		CCAD56481D82430200286C5E /* SwiftrisUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD56471D82430200286C5E /* SwiftrisUITests.swift */; };
+		CCAD56571D82493100286C5E /* Blocs in Resources */ = {isa = PBXBuildFile; fileRef = CCAD56561D82493100286C5E /* Blocs */; };
+		CCAD56651D82534100286C5E /* Array2D.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCAD56641D82534100286C5E /* Array2D.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +39,6 @@
 /* Begin PBXFileReference section */
 		CCAD56201D82430200286C5E /* Swiftris.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiftris.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD56231D82430200286C5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CCAD56251D82430200286C5E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		CCAD56271D82430200286C5E /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		CCAD56291D82430200286C5E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		CCAD562C1D82430200286C5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,8 @@
 		CCAD56431D82430200286C5E /* SwiftrisUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftrisUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCAD56471D82430200286C5E /* SwiftrisUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftrisUITests.swift; sourceTree = "<group>"; };
 		CCAD56491D82430200286C5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCAD56561D82493100286C5E /* Blocs */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Blocs; sourceTree = "<group>"; };
+		CCAD56641D82534100286C5E /* Array2D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Array2D.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +103,15 @@
 		CCAD56221D82430200286C5E /* Swiftris */ = {
 			isa = PBXGroup;
 			children = (
+				CCAD56551D8248FE00286C5E /* Supporting File */,
 				CCAD56231D82430200286C5E /* AppDelegate.swift */,
-				CCAD56251D82430200286C5E /* GameScene.sks */,
 				CCAD56271D82430200286C5E /* GameScene.swift */,
 				CCAD56291D82430200286C5E /* GameViewController.swift */,
 				CCAD562B1D82430200286C5E /* Main.storyboard */,
 				CCAD562E1D82430200286C5E /* Assets.xcassets */,
 				CCAD56301D82430200286C5E /* LaunchScreen.storyboard */,
 				CCAD56331D82430200286C5E /* Info.plist */,
+				CCAD56641D82534100286C5E /* Array2D.swift */,
 			);
 			path = Swiftris;
 			sourceTree = "<group>";
@@ -129,6 +132,14 @@
 				CCAD56491D82430200286C5E /* Info.plist */,
 			);
 			path = SwiftrisUITests;
+			sourceTree = "<group>";
+		};
+		CCAD56551D8248FE00286C5E /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				CCAD56561D82493100286C5E /* Blocs */,
+			);
+			name = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +246,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CCAD56261D82430200286C5E /* GameScene.sks in Resources */,
+				CCAD56571D82493100286C5E /* Blocs in Resources */,
 				CCAD56321D82430200286C5E /* LaunchScreen.storyboard in Resources */,
 				CCAD562F1D82430200286C5E /* Assets.xcassets in Resources */,
 				CCAD562D1D82430200286C5E /* Main.storyboard in Resources */,
@@ -264,6 +275,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CCAD56281D82430200286C5E /* GameScene.swift in Sources */,
+				CCAD56651D82534100286C5E /* Array2D.swift in Sources */,
 				CCAD562A1D82430200286C5E /* GameViewController.swift in Sources */,
 				CCAD56241D82430200286C5E /* AppDelegate.swift in Sources */,
 			);
